@@ -29,3 +29,30 @@
   height: 90vh;
   width: 50vw;
 }
+
+.user , .avatar{
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  font-size: 15px;
+}
+
+
+.user img{
+  margin-left: 5px;
+  border-radius: 30px;
+  height: 45px;
+  width: 45px;
+  object-fit: contain;
+}
+
+.user span{
+  margin-left: 10px;
+}
+
+.icons i{
+  color: rgba(128, 128, 128, 0.555);
+  margin: 8px;
+}
