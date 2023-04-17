@@ -21,7 +21,7 @@
       <div class="lista-contatti">
         <div class="user">
           <div class="avatar">
-            <img src="/img/avatar_io.jpg" alt="Sofia">
+            <img src="img/avatar_io.jpg" alt="Sofia">
             <span>Sofia</span>
           </div>
           <div class="icons">
@@ -37,9 +37,15 @@
           </div>
           <p>Ricevi notifiche di nuovi messaggi <br> <span>Attiva notifiche desktop</span></p>
         </div>
+        <div class="ricerca-convesazione">
+          <input type="text" placeholder="Cerca o inizia una nuova chat">
+        </div>
+        <div class="container-conversazioni">
 
-        <div class="conversazioni">
-          
+          <div v-for="contatto in contatti" class="chat-aperta">
+            <img :src="contatto.avatar" alt>
+            <p>{{contatto.name}} <br> <span>Ultimo messaggio inviato</span></p>
+          </div>
         </div>
 
       </div>
@@ -49,7 +55,7 @@
       <div class="chat">
         <div class="contact">
           <div class="avatar">
-            <img src="/img/avatar_1.jpg" alt="Luca">
+            <img src="img/avatar_2.jpg" alt="Luca">
             <span>Marco</span>
           </div>
           <div class="icons">
