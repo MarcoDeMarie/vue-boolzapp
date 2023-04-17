@@ -19,15 +19,17 @@
 }
 
 
-/* ////////////////////////////////////////////////////// */
+/* /////////////    LISTA CONTATTI     /////////////////// */
 .lista-contatti{
   border-right: 1px solid rgba(128, 128, 128, 0.336) ;
   display: flex;
+  flex-direction: column;
   height: 90vh;
   width: 30vw;
 }
 
 
+/* /////////////    USER     /////////////////// */
 .user{
   width: 30vw;
 }
@@ -59,16 +61,45 @@
   margin: 8px;
 }
 
+/* /////////////    ATTIVARE NOTIFICHE     /////////////////// */
 
-/* ////////////////////////////////////////////////////// */
+.notifiche{
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: #8edafc; 
+  font-size: 12px;
+}
+.notifiche p{
+  margin-left: 10px;
+}
+
+.notifiche p span{
+  color: grey;
+  text-decoration: underline;
+}
+
+.ringbell{
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  margin-left: 20px;
+}
+.ringbell i{
+  color: #8edafc;
+}
+
+
+
+/* /////////////    CHAT     /////////////////// */
 
 
 .chat{
-  background-color: greenyellow;
+  background-image: url("/img/mine.jpg");
   height: 90vh;
   width: 50vw;
 }
-
+/* /////////////    RICEVITORE DEL MESSAGGIO     /////////////////// */
 .contact{
   background-color: #eaeaea;
   display: flex;
@@ -76,6 +107,9 @@
   align-items: center;
   height: 55px;
   font-size: 15px;
+}
+.contact span{
+  margin-left: 10px;
 }
 
 .contact img{
@@ -85,3 +119,5 @@
   width: 45px;
   object-fit: contain;
 }
+
+/* /////////////         /////////////////// */
