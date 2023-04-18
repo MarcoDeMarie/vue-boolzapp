@@ -128,8 +128,7 @@ createApp({
         }
       ],
 
-      contattoAttivo: '',
-      messageWrote:'',
+      contattoAttivo: ''
 
     }
   },
@@ -138,23 +137,11 @@ createApp({
 
   methods:{
 
-
     apriChat(contatto){
       this.contattoAttivo = contatto
-    },
-
-    sendMessage(){
-      const messaggio = {
-        date: '20/03/2020 16:35:00',
-        message: this.messageWrote,
-        status: 'sent'
-      }
-      this.contattoAttivo.messages.push(messaggio)
     }
     
   },
-
-  
 
 
 
