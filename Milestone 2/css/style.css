@@ -135,7 +135,7 @@
 
 
 .chat{
-  background-image: url('./img/mine.jpg');
+  background-image: url('../img/mine.jpg');
   height: 90vh;
   width: 50vw;
 }
@@ -161,3 +161,29 @@
 }
 
 /* /////////////     MESSAGGI       /////////////////// */
+
+.messaggi{
+  
+}
+
+.messaggio-user{
+  float: right;
+  min-height: 55px;
+  max-width: 330px;
+  background-color: #d5f9ba;
+  margin-top: 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+.messaggio-avatar{
+  float: left;
+  min-height: 55px;
+  max-width: 330px;
+  background-color: #ffffff;
+  margin-top: 15px;
+  margin-left: 10px;
+  border-radius: 5px;
+  padding: 5px 5px 5px 5px;
+}
