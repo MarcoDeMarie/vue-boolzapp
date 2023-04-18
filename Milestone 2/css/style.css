@@ -105,6 +105,8 @@
 
 .chat-aperta{
   display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .chat-aperta img{
   margin-left: 5px;
@@ -127,6 +129,10 @@
   color: grey;
 }
 
+.chat-aperta:hover{
+  background-color: rgba(128, 128, 128, 0.438);
+  cursor: pointer;
+}
 
 
 
@@ -160,6 +166,8 @@
   object-fit: contain;
 }
 
+
+
 /* /////////////     MESSAGGI       /////////////////// */
 
 .messaggi{
@@ -186,4 +194,29 @@
   margin-left: 10px;
   border-radius: 5px;
   padding: 5px 5px 5px 5px;
+}
+
+
+/* /////////////    TEXT BAR       /////////////////// */
+
+.text-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 800px;
+  background-color: #f3eeea;
+  width: 50vw;
+  height: 65px;
+}
+
+.text-bar input{
+  min-height: 35px;
+  width: 43vw;
+}
+
+.text-bar i{
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
 }

@@ -29,6 +29,8 @@ createApp({
           ],
 
         },
+
+
         {
           name: 'Marco',
           avatar: './img/avatar_2.jpg',
@@ -51,6 +53,8 @@ createApp({
             }
           ],
         },
+
+
         {
           name: 'Luigi',
           avatar: './img/avatar_3.jpg',
@@ -73,6 +77,8 @@ createApp({
             }
           ],
         },
+
+
         {
           name: 'Giuseppe',
           avatar: './img/avatar_4.jpg',
@@ -95,6 +101,8 @@ createApp({
             }
           ],
         },
+
+
         {
           name: 'Matteo',
           avatar: './img/avatar_5.jpg',
@@ -118,7 +126,9 @@ createApp({
           ],
 
         }
-      ]
+      ],
+
+      contattoAttivo: ''
 
     }
   },
@@ -127,6 +137,9 @@ createApp({
 
   methods:{
 
+    apriChat(contatto){
+      this.contattoAttivo = contatto
+    }
     
   },
 
