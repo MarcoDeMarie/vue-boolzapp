@@ -128,7 +128,8 @@ createApp({
         }
       ],
 
-      contattoAttivo: ''
+      contattoAttivo: '',
+      messageWrote: ''
 
     }
   },
@@ -139,9 +140,14 @@ createApp({
 
     apriChat(contatto){
       this.contattoAttivo = contatto
-    }
+    },
+
+    sendMessage(){
+      this.contattoAttivo.messages.push(messageWrote)
     
   },
+
+  
 
 
 
