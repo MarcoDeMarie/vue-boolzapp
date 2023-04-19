@@ -144,6 +144,7 @@
   background-image: url('../img/mine.jpg');
   height: 90vh;
   width: 50vw;
+  overflow: auto;
 }
 /* /////////////    RICEVITORE DEL MESSAGGIO   /////////////////// */
 .contact{
@@ -161,7 +162,6 @@
 
 .contact .avatar p span{
   color: grey;
-  margin-left: 10px;
 }
 
 .contact .avatar img{
@@ -175,8 +175,16 @@
 
 
 /* /////////////     MESSAGGI       /////////////////// */
+.messaggi{
+  height: calc(100% - 120px);
+  overflow: auto;
+}
 
-
+.messaggi > div:after {
+  display: block;
+  content: "";
+  clear: both;
+}
 
 .messaggio-user{
   float: right;
@@ -190,7 +198,6 @@
 }
 
 .messaggio-avatar{
-  float: left;
   min-height: 55px;
   max-width: 330px;
   background-color: #ffffff;

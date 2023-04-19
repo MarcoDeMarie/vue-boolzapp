@@ -80,7 +80,7 @@ createApp({
 
 
         {
-          name: 'Giuseppe',
+          name: 'Mario',
           avatar: './img/avatar_4.jpg',
           visible: true,
           messages: [
@@ -131,6 +131,7 @@ createApp({
       contattoAttivo: '',
       messageWrote:'',
 
+
     }
   },
 
@@ -151,8 +152,21 @@ createApp({
       }
       this.contattoAttivo.messages.push(messaggio)
       this.messageWrote= ''
-    }
-    
+      setTimeout(this.receiveMessage, 1000)
+
+    },
+
+    receiveMessage(){
+      const risposta = {
+        date: '20/03/2020 16:35:00',
+        message: 'ok',
+        status: 'received'
+      }
+      this.contattoAttivo.messages.push(risposta)
+
+
+    },
+
   },
 
   
