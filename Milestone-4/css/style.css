@@ -1,0 +1,233 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg-grad{
+  background-image: linear-gradient(#009688 , #d6dbd4);
+  height: 100vh;
+}
+
+.main-container{
+  display: flex;
+  background-color: white;
+  margin: 20px auto;
+  height: 90vh;
+  width: 80vw;
+  padding-top: 0;
+}
+
+
+/* /////////////    LISTA CONTATTI     /////////////////// */
+.lista-contatti{
+  border-right: 1px solid rgba(128, 128, 128, 0.336) ;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 30vw;
+}
+
+
+/* /////////////    USER     /////////////////// */
+.user{
+  width: 30vw;
+}
+
+.user , .avatar{
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  font-size: 15px;
+}
+
+
+.user img{
+  margin-left: 5px;
+  border-radius: 30px;
+  height: 45px;
+  width: 45px;
+  object-fit: contain;
+}
+
+.user span{
+  margin-left: 10px;
+}
+
+.icons i{
+  color: rgba(128, 128, 128, 0.555);
+  margin: 8px;
+}
+
+/* /////////////    ATTIVARE NOTIFICHE     /////////////////// */
+
+.notifiche{
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: #8edafc; 
+  font-size: 12px;
+}
+.notifiche p{
+  margin-left: 10px;
+}
+
+.notifiche p span{
+  color: grey;
+  text-decoration: underline;
+}
+
+.ringbell{
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  margin-left: 20px;
+}
+.ringbell i{
+  color: #8edafc;
+}
+
+/* /////////////    CONVERSAZIONI     /////////////////// */
+.ricerca-convesazione{
+  background-color: #fafafa;
+  
+}
+
+.ricerca-convesazione input{
+  border-color: rgba(128, 128, 128, 0.116);
+  border-radius: 3px;
+  width: 29vw;
+  margin: 5px 5px 5px 5px;
+}
+
+
+.chat-aperta{
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.chat-aperta img{
+  margin-left: 5px;
+  border-radius: 30px;
+  height: 45px;
+  width: 45px;
+  object-fit: contain;
+}
+
+.chat-aperta p{
+  margin-left: 10px;
+  font-size: 17px;
+}
+.chat-aperta p span{
+  color: grey;
+  font-size: 11px;
+}
+
+.chat-aperta span{
+  color: grey;
+}
+
+.chat-aperta:hover{
+  background-color: rgba(128, 128, 128, 0.438);
+  cursor: pointer;
+}
+
+
+
+
+/* /////////////    CHAT     /////////////////// */
+
+
+.chat{
+  background-image: url('../img/mine.jpg');
+  height: 90vh;
+  width: 50vw;
+  overflow: auto;
+}
+/* /////////////    RICEVITORE DEL MESSAGGIO   /////////////////// */
+.contact{
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  font-size: 15px;
+}
+
+.contact .avatar p{
+  margin-left: 10px;
+}
+
+.contact .avatar p span{
+  color: grey;
+}
+
+.contact .avatar img{
+  margin-left: 5px;
+  border-radius: 30px;
+  height: 45px;
+  width: 45px;
+  object-fit: contain;
+}
+
+
+
+/* /////////////     MESSAGGI       /////////////////// */
+.messaggi{
+  height: calc(100% - 120px);
+  overflow: auto;
+}
+
+.messaggi > div:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.messaggio-user{
+  float: right;
+  min-height: 55px;
+  max-width: 330px;
+  background-color: #d5f9ba;
+  margin-top: 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+.messaggio-avatar{
+  min-height: 55px;
+  max-width: 330px;
+  background-color: #ffffff;
+  margin-top: 15px;
+  margin-left: 10px;
+  border-radius: 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+
+/* /////////////    TEXT BAR       /////////////////// */
+
+.text-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 800px;
+  background-color: #f3eeea;
+  width: 50vw;
+  height: 65px;
+}
+
+.text-bar input{
+  min-height: 35px;
+  width: 43vw;
+}
+
+.text-bar i{
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+}
