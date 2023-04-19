@@ -154,11 +154,17 @@
   height: 55px;
   font-size: 15px;
 }
-.contact span{
+
+.contact .avatar p{
   margin-left: 10px;
 }
 
-.contact img{
+.contact .avatar p span{
+  color: grey;
+  margin-left: 10px;
+}
+
+.contact .avatar img{
   margin-left: 5px;
   border-radius: 30px;
   height: 45px;
@@ -170,9 +176,7 @@
 
 /* /////////////     MESSAGGI       /////////////////// */
 
-.messaggi{
-  
-}
+
 
 .messaggio-user{
   float: right;
