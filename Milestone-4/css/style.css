@@ -89,7 +89,7 @@
   color: #8edafc;
 }
 
-/* /////////////    CONVERSAZIONI     /////////////////// */
+/* /////////////    RICERCA CONVERSAZIONI     /////////////////// */
 .ricerca-convesazione{
   background-color: #fafafa;
   
@@ -102,7 +102,7 @@
   margin: 5px 5px 5px 5px;
 }
 
-
+/* /////////////    CONVERSAZIONI     /////////////////// */
 .chat-aperta{
   display: flex;
   padding-top: 5px;
@@ -146,6 +146,8 @@
   width: 50vw;
   overflow: auto;
 }
+
+
 /* /////////////    RICEVITORE DEL MESSAGGIO   /////////////////// */
 .contact{
   background-color: #eaeaea;

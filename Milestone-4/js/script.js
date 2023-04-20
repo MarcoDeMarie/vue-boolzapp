@@ -130,16 +130,22 @@ createApp({
 
       contattoAttivo: '',
       messageWrote:'',
+      searchText:'',
 
 
+    }
+  },
+
+  watch:{
+    searchText(nuovoValore,vecchioValore){
+      console.log('Prima: ' + vecchioValore)
+      console.log('Dopo: ' + nuovoValore)
     }
   },
 
 
 
   methods:{
-
-
     apriChat(contatto){
       this.contattoAttivo = contatto
     },
@@ -163,11 +169,23 @@ createApp({
         status: 'received'
       }
       this.contattoAttivo.messages.push(risposta)
-
-
     },
 
+    searchContact(){
+      return this.contacts.filter(contatto =>{
+        return contatto.name.toLowerCase().indexOf(this.searchText.toLowerCase());
+      })
+      
+    },
+
+
   },
+
+    
+      
+  
+    
+  
 
   
 
